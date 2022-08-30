@@ -179,36 +179,6 @@ alias start="bash ~/script/start.sh"
 alias zz='bash ~/script/cleaner.sh'
 clear
 
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/goinfre/mboukhal/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "/goinfre/mboukhal/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/goinfre/mboukhal/miniconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="/goinfre/mboukhal/miniconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
-
-
-export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"
-export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
-export PATH="$PATH:$HOME/goinfre/Flutter/flutter/bin"
-export PATH="$PATH:/Applications/Android Studio.app/Contents/jre/Contents/Home/bin"
-export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
-export PATH="$PATH:$HOME/Library/Android/sdk/tools/bin"
-
-export JAVA_HOME="/Applications/Android Studio.app/Contents/jre/Contents/Home"
-export ANDROID_SDK_HOME="$HOME/Library/Android/sdk"
-export PATH="$PATH:$HOME/goinfre/Flutter/flutter/bin"
-export PATH="$PATH:/Applications/Android Studio.app/Contents/jre/Contents/Home/bin"
-export PATH="$PATH:$HOME/Library/Android/sdk/platform-tools"
-export PATH="$PATH:$HOME/Library/Android/sdk/tools/bin"
-
 PS1='%{$fg[green]%}[$?]%{$reset_color%} %{$fg[cyan]%}[$PWD]%{$reset_color%} $(git_prompt_info) %{$fg[red]%}[`uname -a | tr " " "\n" | grep "e*r*p" | tr "." "\n" | grep "e*r*p"`]%{$reset_color%} %{$fg[yellow]%}$(printf "\n  ➜ ") %{$reset_color%}'
 
 # Load Homebrew config script
